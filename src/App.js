@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
+import Hero from './components/Hero';
+import PayrollSection from './components/PayrollSection';
+import Benefits from './components/Benefits';
+import HowItWorks from './components/HowItWorks';
+import CTA from './components/CTA';
+import ContactForm from './components/ContactForm';
+import Badges from './components/Badges';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Hero />
+      <PayrollSection />
+      <Benefits />
+      <Badges />
+      <HowItWorks />
+      <CTA />
+      <ContactForm />
+      <Footer />
     </div>
   );
 }
