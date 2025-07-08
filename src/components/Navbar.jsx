@@ -19,7 +19,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 text-sm md:text-base font-medium">
-          <a href="#home" className="hover:text-pink-400 transition">Home</a>
+          <a href="#" className="hover:text-pink-400 transition">Home</a>
           <a href="#services" className="hover:text-pink-400 transition">Services</a>
           <a href="#contact" className="hover:text-pink-400 transition">Contact</a>
         </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-gray-900 px-6 pb-4 space-y-3 text-sm font-medium text-white">
-          <a href="#home" className="block hover:text-pink-400 transition">Home</a>
+          <a href="#" className="block hover:text-pink-400 transition">Home</a>
           <a href="#services" className="block hover:text-pink-400 transition">Services</a>
           <a href="#contact" className="block hover:text-pink-400 transition">Contact</a>
         </div>
