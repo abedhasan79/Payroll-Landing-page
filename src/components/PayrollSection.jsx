@@ -1,33 +1,59 @@
 import React from 'react';
+import { UserPlus, Calendar, FileText, Send, Banknote, Receipt } from 'lucide-react';
+
+const features = [
+  {
+    title: 'Employee Setup',
+    icon: <UserPlus className="h-6 w-6 text-pink-500" />,
+    description: 'We onboard employees into our system for accurate records and T4 reporting.',
+  },
+  {
+    title: 'Send Hours Easily',
+    icon: <Send className="h-6 w-6 text-purple-500" />,
+    description: 'Submit hours by email or fax — weekly, bi-weekly, semi-monthly, or monthly.',
+  },
+  {
+    title: 'Flexible Payouts',
+    icon: <Banknote className="h-6 w-6 text-indigo-500" />,
+    description: 'Choose direct deposit or print cheques — whichever suits your workflow.',
+  },
+  {
+    title: 'ROE Support',
+    icon: <FileText className="h-6 w-6 text-pink-400" />,
+    description: 'We generate Record of Employment documents when employees leave.',
+  },
+  {
+    title: 'CRA Deduction Reports',
+    icon: <Receipt className="h-6 w-6 text-purple-400" />,
+    description: 'Monthly deduction summaries and deadlines to avoid late penalties.',
+  },
+  {
+    title: 'Year-End T4s',
+    icon: <Calendar className="h-6 w-6 text-indigo-400" />,
+    description: 'We handle full T4 generation and filing at year-end for peace of mind.',
+  },
+];
 
 const PayrollSection = () => {
   return (
-    <section className="py-20 px-6 bg-gray-50 text-gray-900 text-center">
-      <h2 className="text-4xl font-bold mb-6">Our Payroll Solution</h2>
-      <p className="max-w-2xl mx-auto text-lg mb-10">
-        From new hire setup to T4 filing, we handle every part of your payroll. You simply send us your employees’ hours — we take care of the rest.
-        Choose direct deposit or manual cheque processing, and we’ll ensure all records, remittances, and compliance tasks are handled on time.
-      </p>
+    <section id="payroll" className="bg-gradient-to-br from-pink-200 via-purple-100 to-blue-200 bg-white py-20 px-6 text-center">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">Payroll Services</h2>
+        <p className="text-gray-600 mb-10">
+          We manage your entire payroll process — from setting up employees to issuing pay,
+          filing deductions, and generating year-end T4s. You send us the hours, we do the rest.
+        </p>
 
-      <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-left">
-        <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
-          <h3 className="text-xl font-semibold mb-2">✔ Payroll Processing</h3>
-          <p className="text-sm">
-            Submit hours via email or fax — we’ll run payroll weekly, bi-weekly, semi-monthly, or monthly, based on your schedule.
-            Choose to print cheques yourself or let us handle it.
-          </p>
-        </div>
-        <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
-          <h3 className="text-xl font-semibold mb-2">✔ Direct Deposit & ROEs</h3>
-          <p className="text-sm">
-            We offer secure direct deposit to employee accounts and provide Record of Employment (ROE) forms for terminated staff.
-          </p>
-        </div>
-        <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
-          <h3 className="text-xl font-semibold mb-2">✔ Source Deductions & Year-End Filing</h3>
-          <p className="text-sm">
-            Every month, we notify you of payroll deductions owed and their due dates to help you avoid penalties. At year-end, we generate and file all T4s.
-          </p>
+        <div className="grid md:grid-cols-2 gap-8 text-left">
+          {features.map(({ title, icon, description }) => (
+            <div key={title} className="flex items-start gap-4">
+              <div className="flex-shrink-0 mt-1">{icon}</div>
+              <div>
+                <h3 className="font-semibold text-gray-800">{title}</h3>
+                <p className="text-sm text-gray-600">{description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

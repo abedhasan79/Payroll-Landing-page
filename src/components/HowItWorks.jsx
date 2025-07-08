@@ -1,36 +1,39 @@
 import React from 'react';
+import { ClipboardList, MailCheck, Banknote } from 'lucide-react';
 
 const steps = [
   {
-    step: 'Step 1',
-    title: 'Send Us Employee Hours',
-    description: 'Email or fax your payroll data — we support weekly, bi-weekly, semi-monthly, and monthly schedules.',
+    title: 'Send Your Hours',
+    icon: <ClipboardList className="h-8 w-8 text-pink-500" />,
+    description: 'Email us the hours for your employees weekly, bi-weekly, or monthly.',
   },
   {
-    step: 'Step 2',
     title: 'We Process Payroll',
-    description: 'We handle deductions, direct deposits, cheques, and ensure full CRA compliance.',
+    icon: <MailCheck className="h-8 w-8 text-purple-500" />,
+    description: 'We calculate wages, source deductions, and prepare cheques or direct deposit.',
   },
   {
-    step: 'Step 3',
-    title: 'You Get Reports & Peace of Mind',
-    description: 'We send summary reports, remittance info, and generate T4s at year-end.',
+    title: 'You Stay Compliant',
+    icon: <Banknote className="h-8 w-8 text-indigo-500" />,
+    description: 'We send you reports, ROEs, and file deductions so you meet CRA deadlines.',
   },
 ];
 
 const HowItWorks = () => {
   return (
-    <section className="py-20 px-6 bg-gray-100 text-gray-900 text-center">
-      <h2 className="text-4xl font-bold mb-6">How It Works</h2>
-      <p className="max-w-2xl mx-auto text-lg mb-12">
-        Getting started is easy — we’ve streamlined payroll so you don’t have to worry about the details.
-      </p>
-      <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-left">
-        {steps.map(({ step, title, description }) => (
-          <div key={title} className="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
-            <p className="text-sm font-medium text-gray-500 mb-1">{step}</p>
-            <h3 className="text-xl font-semibold mb-2">{title}</h3>
-            <p className="text-sm">{description}</p>
+    <section id="how" className="py-16 px-6 bg-white text-center">
+      <h2 className="text-3xl font-bold mb-10 text-gray-800">How Payroll Works</h2>
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className="bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50 p-6 rounded-xl shadow-md hover:shadow-xl transition"
+          >
+            <div className="flex justify-center mb-4">
+              {step.icon}
+            </div>
+            <h3 className="text-lg font-semibold mb-2 text-gray-800">{step.title}</h3>
+            <p className="text-sm text-gray-600">{step.description}</p>
           </div>
         ))}
       </div>

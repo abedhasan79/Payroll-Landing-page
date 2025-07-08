@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Brand */}
         <div>
-          <h3 className="text-xl font-bold mb-2">PayHub</h3>
+          <h3 className="text-xl font-bold mb-2">PayHubMb</h3>
           <p className="text-sm text-gray-400">
             Helping Canadian businesses simplify payroll and stay CRA compliant.
           </p>
@@ -23,7 +23,7 @@ const Footer = () => {
           <h4 className="font-semibold mb-2">Quick Links</h4>
           <ul className="text-sm space-y-1">
             <li><a href="#home" className="hover:text-pink-400 transition">Home</a></li>
-            <li><a href="#payroll" className="hover:text-pink-400 transition">Payroll</a></li>
+            <li><a href="#services" className="hover:text-pink-400 transition">Services</a></li>
             <li><a href="#contact" className="hover:text-pink-400 transition">Contact</a></li>
           </ul>
         </div>
