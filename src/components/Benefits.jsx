@@ -25,9 +25,9 @@ const benefits = [
     description: 'Choose weekly, bi-weekly, or monthly schedules based on your needs.',
   },
   {
-    title: 'Direct Deposit',
+    title: 'Direct Deposit by employer',
     icon: <Banknote className="h-8 w-8 text-pink-400" />,
-    description: 'We offer direct deposit to employee bank accounts across Canada.',
+    description: 'Based on our pay stubs, the employer might make the direct deposit to employees.',
   },
   {
     title: 'Time Saved',

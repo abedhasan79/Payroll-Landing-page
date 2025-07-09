@@ -2,7 +2,9 @@ const badges = [
   { src: '/images/cert1.png', alt: 'cert1' },
   { src: '/images/cert2.png', alt: 'cert2' },
   { src: '/images/cert3.png', alt: 'cert3' },
+  { src: '/images/cert5.png', alt: 'cert5' },
   { src: '/images/cert4.png', alt: 'cert4' },
+  
 ];
 
 const Badges = () => {
