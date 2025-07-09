@@ -62,7 +62,7 @@ const Footer = () => {
       </div>
 
       <div className="mt-8 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} PayHub All rights reserved.
+        © {new Date().getFullYear()} PayHubMb All rights reserved.
       </div>
     </footer>
   );

@@ -15,7 +15,7 @@ const features = [
   {
     title: 'Flexible Payouts',
     icon: <Banknote className="h-6 w-6 text-indigo-500" />,
-    description: 'Choose direct deposit or print cheques — whichever suits your workflow.',
+    description: 'We prepare paystubs and email them to you directly you choose how to pay your employees, whether by e-transfer, cheque, or directly through your business bank',
   },
   {
     title: 'ROE Support',
