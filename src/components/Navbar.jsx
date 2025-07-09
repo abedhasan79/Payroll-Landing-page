@@ -15,7 +15,7 @@ const Navbar = () => {
             alt="PayHubMb Logo"
             className="h-10 w-auto"
           />
-          <span className="text-xl font-bold text-white" style={{ textShadow: '0 0 12px rgb(87, 250, 123)' }}>PayHubMb</span>
+          <span className="text-xl font-bold text-white" style={{ textShadow: '0 0 12px rgb(87, 244, 250)' }}>PayHubMb</span>
         </div>
 
         {/* Desktop Menu */}
