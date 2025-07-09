@@ -41,7 +41,7 @@ const Footer = () => {
 
         {/* Contact + Social */}
         <div>
-          <h4 className="font-semibold mb-2">Contact</h4>
+          <h4 className="font-semibold mb-2">Lets Connect</h4>
           <p className="text-sm text-gray-400">Payhubmb@outlook.com</p>
           <p className="text-sm text-gray-400 mb-4">(431) 374-6695</p>
 
