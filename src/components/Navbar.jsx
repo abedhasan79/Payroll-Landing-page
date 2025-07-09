@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react'; // npm install lucide-react
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
             alt="PayHubMb Logo"
             className="h-10 w-auto"
           />
-          <span className="text-xl font-bold text-white">PayHubMb</span>
+          <span className="text-xl font-bold text-white" style={{ textShadow: '0 0 12px rgb(87, 250, 123)' }}>PayHubMb</span>
         </div>
 
         {/* Desktop Menu */}
