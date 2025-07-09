@@ -9,18 +9,17 @@ const ContactForm = () => {
     // TODO: Connect to form backend like EmailJS, Formspree, etc.
   };
 
-  const imageUrl = 'images/handsh.png'; // relative path from public folder
+  // const imageUrl = 'images/handsh.png'; // relative path from public folder
 
   return (
-    <section id="contact" className="flex flex-col md:flex-row min-h-screen bg-gradient-to-br from-pink-50 via-grey-400 to-blue-200" >
+    <section  className="flex flex-col md:flex-row min-h-screen bg-gradient-to-br from-pink-50 via-grey-400 to-blue-200" >
       {/* Left Side: Image */}
-      <div
-        className="md:w-1/2 h-50 md:h-50 bg-cover bg-center"
-        style={{ backgroundImage: `url(${imageUrl})` }}
-      ></div>
+      <div className="md:w-1/2 h-auto md:h-auto bg-cover bg-center">
+        <img src='images/handsh.png' alt='handshake'/>
+      </div>
 
       {/* Right Side: Form */}
-      <div className="md:w-1/2  text-gray-900 py-20 px-6 md:px-12 flex items-center justify-center">
+      <div id="contact" className="md:w-1/2 text-gray-900 py-20 px-6 md:px-12 flex items-center justify-center">
         <div className="w-full max-w-xl">
           <h2 className="text-4xl font-bold mb-6 text-center">Get in Touch</h2>
           <p className="text-lg mb-8 text-center">
