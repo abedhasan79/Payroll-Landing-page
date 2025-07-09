@@ -10,7 +10,7 @@ const steps = [
   {
     title: 'We Process Payroll',
     icon: <MailCheck className="h-8 w-8 text-purple-500" />,
-    description: 'We calculate wages, source deductions, and prepare paystubs',
+    description: 'We calculate wages, source deductions, and prepare paystubs.',
   },
   {
     title: 'You Stay Compliant',
