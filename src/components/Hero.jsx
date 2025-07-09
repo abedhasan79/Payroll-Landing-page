@@ -51,14 +51,15 @@ const Hero = () => {
         >
           We manage your entire payroll process from pay runs and direct deposits to ROEs and year-end T4s so you can focus on growing your business.
         </p>
-        <button
+        <a
+          href='#contact'
           style={hover ? buttonHoverStyle : buttonStyle}
           className="font-semibold py-3 px-6 rounded shadow"
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         >
           Book a Free Payroll Consultation
-        </button>
+        </a>
       </div>
     </section>
   );
