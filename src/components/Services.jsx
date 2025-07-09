@@ -34,7 +34,7 @@ const services = [
   {
     title: "Business Setup (Federal & Provincial)",
     description:
-      "Starting a business? We handle registrations, CRA accounts, provincial licenses, and more — for sole proprietors, partnerships, or corporations.",
+      "Starting a business? We handle registrations, CRA accounts, provincial licenses, and more for sole proprietors, partnerships, or corporations.",
   },
 ];
 
@@ -64,8 +64,10 @@ const Services = () => {
         <div className="flex justify-center flex-wrap gap-8">
           {partnerFirms.map(({ name, logo }) => (
             <div key={name} className="flex flex-col items-center space-y-2">
-              <img src={logo} alt={name} className="h-16 object-contain" />
-              <p className="text-sm text-gray-600">{name}</p>
+              <a href='https://www.ranaaccounting.com/'>
+                <img src={logo} alt={name} className="h-34 w-60 object-contain" />
+                {/* <p className="text-sm text-gray-600">{name}</p> */}
+              </a>
             </div>
           ))}
         </div>

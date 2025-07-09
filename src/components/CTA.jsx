@@ -20,7 +20,7 @@ const CTA = () => {
           Ready to Simplify Your Payroll?
         </h2>
         <p className="text-lg mb-6">
-          Let us handle the details — accurate, secure, and on time. Book a free consultation today.
+          Let us handle the details accurate, secure, and on time. Book a free consultation today.
         </p>
         <a
           href="#contact"

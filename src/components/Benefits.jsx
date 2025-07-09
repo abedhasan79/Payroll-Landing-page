@@ -32,7 +32,7 @@ const benefits = [
   {
     title: 'Time Saved',
     icon: <Timer className="h-8 w-8 text-purple-400" />,
-    description: 'No more spreadsheets — we handle everything so you can focus on business.',
+    description: 'No more spreadsheets we handle everything so you can focus on business.',
   },
   {
     title: 'Peace of Mind',

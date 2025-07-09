@@ -49,7 +49,7 @@ const Hero = () => {
           className="text-xl mb-8"
           style={{ textShadow: '0 0 8px rgb(255, 105, 180)' }}
         >
-          We manage your entire payroll process — from pay runs and direct deposits to ROEs and year-end T4s — so you can focus on growing your business.
+          We manage your entire payroll process from pay runs and direct deposits to ROEs and year-end T4s so you can focus on growing your business.
         </p>
         <button
           style={hover ? buttonHoverStyle : buttonStyle}

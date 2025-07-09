@@ -10,7 +10,7 @@ const features = [
   {
     title: 'Send Hours Easily',
     icon: <Send className="h-6 w-6 text-purple-500" />,
-    description: 'Submit hours by email or fax — weekly, bi-weekly, semi-monthly, or monthly.',
+    description: 'Submit hours by email or fax weekly, bi-weekly, semi-monthly, or monthly.',
   },
   {
     title: 'Flexible Payouts',
@@ -38,9 +38,9 @@ const PayrollSection = () => {
   return (
     <section id="payroll" className="bg-gradient-to-br from-pink-200 via-purple-100 to-blue-200 bg-white py-20 px-6 text-center">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">Payroll Services</h2>
+        <h2 className="text-5xl font-bold text-gray-800 mb-6 font-verdana">Payroll Services</h2>
         <p className="text-gray-600 mb-10">
-          We manage your entire payroll process — from setting up employees to issuing pay,
+          We manage your entire payroll process from setting up employees to issuing pay,
           filing deductions, and generating year-end T4s. You send us the hours, we do the rest.
         </p>
 
