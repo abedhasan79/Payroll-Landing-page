@@ -1,10 +1,12 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 import {
   Facebook,
   Linkedin,
 } from 'lucide-react';
 
 const Footer = () => {
+  const path = window.location.pathname;
   return (
     <footer className="bg-gray-900 text-white py-10 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
@@ -23,7 +25,17 @@ const Footer = () => {
             <li><a href="/" className="hover:text-blue-400 transition">Home</a></li>
             <li><a href="/services" className="hover:text-blue-400 transition">Services</a></li>
             <li><a href="/checklist" className="hover:text-blue-400 transition">Tax File Checklist</a></li>
-            <li><a href="#contact" className="hover:text-blue-400 transition">Contact</a></li>
+            {
+              path === '/services' ? (
+                <HashLink smooth to="#contact" className="hover:text-blue-400 transition">
+                  Contact
+                </HashLink>
+              ) : (
+                <HashLink smooth to="/#contact" className="hover:text-blue-400 transition">
+                  Contact
+                </HashLink>
+              )
+            }
           </ul>
         </div>
 
@@ -58,17 +70,17 @@ const Footer = () => {
           <div className="flex justify-center md:justify-start gap-4 mt-4">
             <a href='https://www.canada.ca/en/revenue-agency.html' target="_blank" rel="noopener noreferrer">
               <img
-              src="/images/cra.png"
-              alt="CRA Logo"
-              className="h-8 object-contain"
-            />
+                src="/images/cra.png"
+                alt="CRA Logo"
+                className="h-8 object-contain"
+              />
             </a>
             <a href='https://www.ranaaccounting.com/' target="_blank" rel="noopener noreferrer">
               <img
-              src="/images/ranaacc.jpg" // Put your own logo in public/images/
-              alt="Trusted Partner"
-              className="h-8 object-contain"
-            />
+                src="/images/ranaacc.jpg" // Put your own logo in public/images/
+                alt="Trusted Partner"
+                className="h-8 object-contain"
+              />
             </a>
           </div>
         </div>

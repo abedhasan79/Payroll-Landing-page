@@ -52,7 +52,17 @@ const Navbar = () => {
           <a href="/" className="block hover:text-blue-400 transition">Home</a>
           <a href="/services" className="block hover:text-blue-400 transition">Services</a>
           <a href="/checklist" className="block hover:text-blue-400 transition">Tax File Checklist</a>
-          <HashLink smooth to="/#contact" className="block hover:text-blue-400 transition">Contact</HashLink>
+          {
+            path === '/services' ? (
+            <HashLink smooth to="#contact" className="hover:text-blue-400 transition">
+              Contact
+            </HashLink>
+          ) : (
+            <HashLink smooth to="/#contact" className="hover:text-blue-400 transition">
+              Contact
+            </HashLink>
+          )
+          }
         </div>
       )}
     </nav>
