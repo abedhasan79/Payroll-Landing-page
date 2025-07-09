@@ -13,15 +13,15 @@ const steps = [
     description: 'We calculate wages, source deductions, and prepare paystubs.',
   },
   {
-    title: 'You Stay Compliant',
+    title: 'Ensuring Full Compliance',
     icon: <Banknote className="h-8 w-8 text-indigo-500" />,
-    description: 'We send you reports, ROEs, and file deductions so you meet CRA deadlines.',
+    description: 'We prepare and submit all required reports, Records of Employment (ROEs), and source deduction filings to ensure your business remains fully compliant with CRA regulations and deadlines.',
   },
 ];
 
 const HowItWorks = () => {
   return (
-    <section id="how" className="py-16 px-6 bg-white text-center">
+    <section id="how" className="py-16 px-6  text-center">
       <h2 className="text-3xl font-bold mb-10 text-gray-800">How Payroll Works</h2>
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
         {steps.map((step, index) => (

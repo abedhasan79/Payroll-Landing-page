@@ -11,7 +11,7 @@ import Badges from '../components/Badges';
 
 function Home() {
   return (
-    <div>
+    <div className='bg-gradient-to-br from-pink-50 via-grey-400 to-blue-200'>
       {/* <Navbar /> */}
       <Hero />
       <PayrollSection />

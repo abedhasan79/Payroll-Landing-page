@@ -3,9 +3,9 @@ import { UserPlus, Calendar, FileText, Send, Banknote, Receipt } from 'lucide-re
 
 const features = [
   {
-    title: 'Employee Setup',
+    title: 'Comprehensive Employee Onboarding',
     icon: <UserPlus className="h-6 w-6 text-pink-500" />,
-    description: 'We onboard employees into our system for accurate records and T4 reporting.',
+    description: 'We efficiently onboard your employees into our system to ensure accurate record-keeping and seamless year-end T4 reporting. ',
   },
   {
     title: 'Send Hours Easily',
@@ -36,7 +36,7 @@ const features = [
 
 const PayrollSection = () => {
   return (
-    <section id="payroll" className="bg-gradient-to-br from-pink-200 via-purple-100 to-blue-200 bg-white py-20 px-6 text-center">
+    <section id="payroll" className="  py-20 px-6 text-center">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-5xl font-bold text-gray-800 mb-6 font-verdana">Payroll Services</h2>
         <p className="text-gray-600 mb-10">

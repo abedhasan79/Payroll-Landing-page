@@ -44,7 +44,7 @@ const partnerFirms = [
 
 const Services = () => {
   return (
-    <div className="min-h-screen bg-white py-16 px-6 bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50">
+    <div className="min-h-screen bg-white py-16 px-6 bg-gradient-to-br ">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-3xl font-bold text-center mb-10 text-gray-800">Our Services</h1>
 
@@ -60,12 +60,12 @@ const Services = () => {
           ))}
         </div>
 
-        <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Our Partner</h2>
+        <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">A concern of Rana Accounting & Tax Services Inc.</h2>
         <div className="flex justify-center flex-wrap gap-8">
           {partnerFirms.map(({ name, logo }) => (
             <div key={name} className="flex flex-col items-center space-y-2">
               <a href='https://www.ranaaccounting.com/'>
-                <img src={logo} alt={name} className="h-34 w-60 object-contain" />
+                <img src={logo} alt={name} className="h-50 w-80 object-contain" />
                 {/* <p className="text-sm text-gray-600">{name}</p> */}
               </a>
             </div>

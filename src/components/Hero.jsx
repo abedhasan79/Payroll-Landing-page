@@ -3,20 +3,20 @@ import React from 'react';
 const Hero = () => {
   const backgroundImage = 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1470&q=80';
 
-  const buttonColor = 'rgb(255, 105, 180)'; // neon pink
-  const buttonHoverColor = 'rgb(255, 182, 193)'; // light pink
+  const buttonColor = 'rgb(105, 175, 255)'; // neon pink
+  const buttonHoverColor = 'rgb(43, 106, 131)'; // light pink
 
   const buttonStyle = {
     backgroundColor: buttonColor,
     color: 'white',
-    boxShadow: '0 0 10px 3px rgb(255, 105, 180)',
+    boxShadow: '0 0 10px 3px rgb(105, 175, 255)',
     transition: 'background-color 0.3s ease, box-shadow 0.3s ease',
   };
 
   const buttonHoverStyle = {
     backgroundColor: buttonHoverColor,
     color: 'white',
-    boxShadow: '0 0 14px 5px rgb(255, 182, 193)',
+    boxShadow: '0 0 14px 5px rgb(43, 106, 131)',
   };
 
   const [hover, setHover] = React.useState(false);
@@ -41,13 +41,13 @@ const Hero = () => {
       <div style={{ zIndex: 1, maxWidth: '700px' }}>
         <h1
           className="text-5xl font-bold mb-4"
-          style={{ textShadow: '0 0 12px rgb(255, 105, 180)' }}
+          style={{ textShadow: '0 0 12px rgb(105, 175, 255)' }}
         >
           Stress-Free Payroll for Canadian Businesses
         </h1>
         <p
           className="text-xl mb-8"
-          style={{ textShadow: '0 0 8px rgb(255, 105, 180)' }}
+          style={{ textShadow: '0 0 8px rgb(105, 175, 255)' }}
         >
           We manage your entire payroll process from pay runs and direct deposits to ROEs and year-end T4s so you can focus on growing your business.
         </p>

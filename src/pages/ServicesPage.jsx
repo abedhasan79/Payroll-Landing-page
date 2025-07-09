@@ -7,7 +7,7 @@ import HeroServ from '../components/HeroServ';
 
 function ServicesPage() {
   return (
-    <div>
+    <div className='from-blue-50 via-grey-400 to-blue-200'>
       {/* <Navbar /> */}
       <HeroServ />
       <Services />

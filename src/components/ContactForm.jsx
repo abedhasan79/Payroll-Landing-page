@@ -12,7 +12,7 @@ const ContactForm = () => {
   const imageUrl = 'images/handsh.png'; // relative path from public folder
 
   return (
-    <section id="contact" className="flex flex-col md:flex-row min-h-screen bg-gradient-to-br from-pink-200 via-purple-200 to-indigo-200" >
+    <section id="contact" className="flex flex-col md:flex-row min-h-screen bg-gradient-to-br from-pink-50 via-grey-400 to-blue-200" >
       {/* Left Side: Image */}
       <div
         className="md:w-3/5 h-64 md:h-auto bg-cover bg-center"
