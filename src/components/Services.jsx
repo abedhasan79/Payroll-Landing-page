@@ -52,7 +52,7 @@ const Services = () => {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="p-6 bg-white rounded-xl shadow-md border-l-4 border-pink-500"
+              className="p-6 bg-white rounded-xl shadow-md border-l-4 border-blue-400"
             >
               <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
               <p className="text-gray-600 text-sm">{service.description}</p>
@@ -63,9 +63,9 @@ const Services = () => {
         <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">A concern of Rana Accounting & Tax Services Inc.</h2>
         <div className="flex justify-center flex-wrap gap-8">
           {partnerFirms.map(({ name, logo }) => (
-            <div key={name} className="flex flex-col items-center space-y-2">
+            <div key={name} className="flex flex-col items-center space-y-2 ">
               <a href='https://www.ranaaccounting.com/'>
-                <img src={logo} alt={name} className="h-50 w-80 object-contain" />
+                <img src={logo} alt={name} className="h-50 w-80 object-contain shadow-[0_0_15px_3px_rgba(255,215,0,0.4)]" />
                 {/* <p className="text-sm text-gray-600">{name}</p> */}
               </a>
             </div>

@@ -3,8 +3,8 @@ import React from 'react';
 const Hero = () => {
   const backgroundImage = 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1470&q=80';
 
-  const buttonColor = 'rgb(105, 175, 255)'; // neon pink
-  const buttonHoverColor = 'rgb(43, 106, 131)'; // light pink
+  const buttonColor = 'rgb(54, 131, 219)'; // neon pink
+  const buttonHoverColor = 'rgb(26, 174, 233)'; // light pink
 
   const buttonStyle = {
     backgroundColor: buttonColor,

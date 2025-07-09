@@ -24,7 +24,7 @@ const CTA = () => {
         </p>
         <a
           href="#contact"
-          className="inline-block bg-white text-pink-600 font-semibold py-3 px-6 rounded shadow hover:bg-pink-100 transition"
+          className="inline-block bg-white text-blue-500 font-semibold py-3 px-6 rounded shadow hover:bg-blue-100 transition"
         >
           Book Free Consultation
         </a>
