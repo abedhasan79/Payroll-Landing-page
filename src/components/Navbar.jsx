@@ -22,6 +22,7 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6 text-sm md:text-base font-medium">
           <a href="/" className="hover:text-blue-400 transition">Home</a>
           <a href="/services" className="hover:text-blue-400 transition">Services</a>
+          <a href="/checklist" className="hover:text-blue-400 transition">Tax File Checklist</a>
           <a href="#contact" className="hover:text-blue-400 transition">Contact</a>
         </div>
 
@@ -38,6 +39,7 @@ const Navbar = () => {
         <div className="md:hidden bg-gray-900 px-6 pb-4 space-y-3 text-sm font-medium text-white">
           <a href="/" className="block hover:text-blue-400 transition">Home</a>
           <a href="/services" className="block hover:text-blue-400 transition">Services</a>
+          <a href="/checklist" className="hover:text-blue-400 transition">Tax File Checklist</a>
           <a href="#contact" className="block hover:text-blue-400 transition">Contact</a>
         </div>
       )}

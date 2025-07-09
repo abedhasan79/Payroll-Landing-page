@@ -22,6 +22,7 @@ const Footer = () => {
           <ul className="text-sm space-y-1">
             <li><a href="/" className="hover:text-blue-400 transition">Home</a></li>
             <li><a href="/services" className="hover:text-blue-400 transition">Services</a></li>
+            <li><a href="/checklist" className="hover:text-blue-400 transition">Tax File Checklist</a></li>
             <li><a href="#contact" className="hover:text-blue-400 transition">Contact</a></li>
           </ul>
         </div>
@@ -32,7 +33,7 @@ const Footer = () => {
           <p className="text-sm text-gray-400">Payhubmb@outlook.com</p>
           <p className="text-sm text-gray-400 mb-4">(431) 374-6695</p>
 
-          <div className="flex justify-center md:justify-start gap-4">
+          <div className="flex justify-center md:justify-start gap-4 mb-4">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <Facebook className="h-5 w-5 hover:text-pink-400 transition" />
             </a>
@@ -52,11 +53,29 @@ const Footer = () => {
               />
             </a>
           </div>
+
+          {/* Logos */}
+          <div className="flex justify-center md:justify-start gap-4 mt-4">
+            <a href='https://www.canada.ca/en/revenue-agency.html' target="_blank" rel="noopener noreferrer">
+              <img
+              src="/images/cra.png"
+              alt="CRA Logo"
+              className="h-8 object-contain"
+            />
+            </a>
+            <a href='https://www.ranaaccounting.com/' target="_blank" rel="noopener noreferrer">
+              <img
+              src="/images/ranaacc.jpg" // Put your own logo in public/images/
+              alt="Trusted Partner"
+              className="h-8 object-contain"
+            />
+            </a>
+          </div>
         </div>
       </div>
 
       <div className="mt-8 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} PayHubMb All rights reserved.
+        © {new Date().getFullYear()} PayHubMb. All rights reserved.
       </div>
     </footer>
   );
