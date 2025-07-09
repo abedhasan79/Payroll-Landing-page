@@ -13,7 +13,7 @@ const Badges = () => {
         {badges.map(({ src, alt }) => (
           <div
             key={alt}
-            className="p-2 rounded-xl shadow-[0_0_15px_3px_rgba(255,0,255,0.3)] transition duration-300 bg-gradient-to-r from-pink-200 via-purple-200 to-blue-100"
+            className="p-2 rounded-xl shadow-[0_0_15px_3px_rgba(255,0,255,0.3)] transition duration-300 bg-gradient-to-r from-pink-200 via-purple-200 to-blue-100 hover:shadow-xl transition"
           >
             <img
               src={src}

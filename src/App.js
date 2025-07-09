@@ -1,11 +1,7 @@
 import React from 'react';
-import Hero from './components/Hero';
-import PayrollSection from './components/PayrollSection';
-import Benefits from './components/Benefits';
-import HowItWorks from './components/HowItWorks';
-import CTA from './components/CTA';
-import ContactForm from './components/ContactForm';
-import Badges from './components/Badges';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import ServicesPage from './pages/ServicesPage';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import './App.css';
@@ -14,13 +10,12 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <PayrollSection />
-      <Benefits />
-      <Badges />
-      <HowItWorks />
-      <CTA />
-      <ContactForm />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<ServicesPage />} />
+        </Routes>
+      </Router>
       <Footer />
     </div>
   );

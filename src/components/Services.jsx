@@ -1,28 +1,76 @@
 import React from 'react';
 
 const services = [
-  { title: 'Personal Tax (T1)', description: 'Fast and accurate filing for individual tax returns with expert guidance.' },
-  { title: 'Corporate Tax (T2)', description: 'Ensure your business stays compliant and tax-efficient with our corporate filing service.' },
-  { title: 'Bookkeeping & Accounting', description: 'Professional bookkeeping and financial record management tailored to your business.' },
-  { title: 'GST/HST & RST/PST E-Filing', description: 'We calculate and e-file all federal and provincial sales taxes on your behalf.' },
-  { title: 'Payroll Services', description: 'Seamless payroll processing, CRA remittance, and T4/T5 slip generation.' },
-  { title: 'Accounting Software Setup', description: 'Expert setup and support for QuickBooks, Sage, Xero, and other platforms.' },
-  { title: 'Business Setup (Federal & Provincial)', description: 'Get your business registered and compliant across all jurisdictions in Canada.' },
+  {
+    title: "Personal Tax (T1)",
+    description:
+      "We prepare and file personal income taxes for individuals, students, and families. Whether you’re employed, self-employed, or retired, we maximize your return and ensure CRA compliance.",
+  },
+  {
+    title: "Corporate Tax (T2)",
+    description:
+      "Full T2 corporate return preparation for small to mid-sized businesses. We ensure accurate filing, apply all eligible deductions, and handle year-end financial statements.",
+  },
+  {
+    title: "Bookkeeping & Accounting",
+    description:
+      "We manage your books so you can focus on your business. From monthly reconciliations to expense tracking, our services keep your finances organized and audit-ready.",
+  },
+  {
+    title: "GST/HST & RST/PST Calculations & E-Filing",
+    description:
+      "We calculate and file your sales tax returns on time. Whether it’s GST/HST or provincial RST/PST, we’ll ensure accurate submissions and help you avoid costly penalties.",
+  },
+  {
+    title: "Payroll Services",
+    description:
+      "We handle payroll processing, employee T4s, ROEs, CRA deductions, and more. Our flexible scheduling options ensure your team is paid accurately and on time.",
+  },
+  {
+    title: "Accounting Software Support",
+    description:
+      "We provide setup and training for tools like QuickBooks, Sage, and Xero. Whether you're starting fresh or migrating systems, we ensure your software fits your workflow.",
+  },
+  {
+    title: "Business Setup (Federal & Provincial)",
+    description:
+      "Starting a business? We handle registrations, CRA accounts, provincial licenses, and more — for sole proprietors, partnerships, or corporations.",
+  },
+];
+
+const partnerFirms = [
+  { name: "Rana Accounting & Tax Services Inc.", logo: "/images/ranaacc.jpg" },
 ];
 
 const Services = () => {
   return (
-    <section className="py-16 px-6 bg-gray-50 text-gray-900 text-center">
-      <h2 className="text-4xl font-bold mb-12">Our Services</h2>
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
-        {services.map(({ title, description }) => (
-          <div key={title} className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition text-left">
-            <h3 className="text-xl font-semibold mb-2">{title}</h3>
-            <p className="text-sm">{description}</p>
-          </div>
-        ))}
+    <div className="min-h-screen bg-white py-16 px-6 bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50">
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-3xl font-bold text-center mb-10 text-gray-800">Our Services</h1>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {services.map((service, idx) => (
+            <div
+              key={idx}
+              className="p-6 bg-white rounded-xl shadow-md border-l-4 border-pink-500"
+            >
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
+              <p className="text-gray-600 text-sm">{service.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Our Partner</h2>
+        <div className="flex justify-center flex-wrap gap-8">
+          {partnerFirms.map(({ name, logo }) => (
+            <div key={name} className="flex flex-col items-center space-y-2">
+              <img src={logo} alt={name} className="h-16 object-contain" />
+              <p className="text-sm text-gray-600">{name}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
