@@ -65,7 +65,7 @@ const Services = () => {
           {partnerFirms.map(({ name, logo }) => (
             <div key={name} className="flex flex-col items-center space-y-2 ">
               <a href='https://www.ranaaccounting.com/'>
-                <img src={logo} alt={name} className="h-50 w-80 object-contain shadow-[0_0_15px_3px_rgba(255,215,0,0.8)]" />
+                <img src={logo} alt={name} className="h-50 w-80 object-contain bg-white shadow-[0_0_30px_8px_rgba(255,215,0,1)] " />
                 {/* <p className="text-sm text-gray-600">{name}</p> */}
               </a>
             </div>
