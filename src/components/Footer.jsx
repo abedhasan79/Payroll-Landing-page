@@ -39,14 +39,16 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold mb-2">Let's Connect</h4>
           <p className="text-sm text-gray-400">Payhubmb@outlook.com</p>
-          <p className="text-sm text-gray-400 mb-4">(431) 374-6695</p>
+          <p className="text-sm text-gray-400 mb-4"><a href="tel:4313746695" className="text-sm text-gray-400 mb-4 hover:underline">
+            (431) 374-6695
+          </a></p>
 
           <div className="flex justify-center md:justify-start gap-4 mb-4">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
                 alt="Facebook"
-                className="h-8 w-8 hover:opacity-80 transition"
+                className="h-8 w-8 hover:opacity-80 transition rounded-2xl shadow-[0_0_15px_3px_rgba(0,191,255,0.7)]"
               />
             </a>
 
@@ -54,7 +56,7 @@ const Footer = () => {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
                 alt="LinkedIn"
-                className="h-8 w-8 hover:opacity-80 transition"
+                className="h-8 w-8 hover:opacity-80 transition rounded-md shadow-[0_0_15px_3px_rgba(0,191,255,0.7)]"
               />
             </a>
 
@@ -62,7 +64,7 @@ const Footer = () => {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
                 alt="Instagram"
-                className="h-8 w-8 hover:opacity-80 transition"
+                className="h-8 w-8 hover:opacity-80 transition rounded-xl shadow-[0_0_15px_3px_rgba(225,48,108,0.7)]"
               />
             </a>
 
@@ -75,7 +77,7 @@ const Footer = () => {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
                 alt="WhatsApp"
-                className="h-8 w-8 hover:opacity-80 transition"
+                className="h-8 w-8 hover:opacity-80 transition rounded-2xl shadow-[0_0_15px_3px_rgba(37,211,102,0.7)]"
               />
             </a>
           </div>
