@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ServicesPage from './pages/ServicesPage';
@@ -8,6 +8,10 @@ import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
+  useEffect(()=>{
+    document.title = 'PayHubMB';
+  });
+
   return (
     <div>
       <Navbar />
