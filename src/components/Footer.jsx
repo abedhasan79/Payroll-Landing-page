@@ -1,9 +1,5 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
-import {
-  Facebook,
-  Linkedin,
-} from 'lucide-react';
 
 const Footer = () => {
   const path = window.location.pathname;
@@ -47,11 +43,29 @@ const Footer = () => {
 
           <div className="flex justify-center md:justify-start gap-4 mb-4">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <Facebook className="h-5 w-5 hover:text-pink-400 transition" />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                alt="Facebook"
+                className="h-8 w-8 hover:opacity-80 transition"
+              />
             </a>
+
             <a href="https://www.linkedin.com/in/labib-rana-28244b293/" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="h-5 w-5 hover:text-pink-400 transition" />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                alt="LinkedIn"
+                className="h-8 w-8 hover:opacity-80 transition"
+              />
             </a>
+
+            <a href="https://www.instagram.com/payhubcanada?igsh=ZXNmZm42cW96ZXhx" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                alt="Instagram"
+                className="h-8 w-8 hover:opacity-80 transition"
+              />
+            </a>
+
             <a
               href="https://wa.me/message/X4RIHSSRDWFCH1"
               target="_blank"
@@ -61,7 +75,7 @@ const Footer = () => {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
                 alt="WhatsApp"
-                className="h-6 w-6 hover:opacity-80 transition"
+                className="h-8 w-8 hover:opacity-80 transition"
               />
             </a>
           </div>
