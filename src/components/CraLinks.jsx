@@ -7,7 +7,7 @@ const craLinks = [
   },
   {
     name: 'Income Tax Rates',
-    url: 'https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canada-income-tax-rates.html',
+    url: 'https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html',
   },
   {
     name: 'EI Rates',
@@ -15,7 +15,7 @@ const craLinks = [
   },
   {
     name: 'CPP Rates',
-    url: 'https://www.canada.ca/en/services/benefits/publicpensions/cpp/cpp-contributions/employer-employee-rates.html',
+    url: 'https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html',
   },
 ];
 

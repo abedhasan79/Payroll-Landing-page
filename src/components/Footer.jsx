@@ -72,14 +72,14 @@ const Footer = () => {
               <img
                 src="/images/cra.png"
                 alt="CRA Logo"
-                className="h-8 object-contain"
+                className="h-7 object-contain"
               />
             </a>
             <a href='https://www.ranaaccounting.com/' target="_blank" rel="noopener noreferrer">
               <img
                 src="/images/ranaacc.jpg" // Put your own logo in public/images/
                 alt="Trusted Partner"
-                className="h-8 object-contain"
+                className="h-12 object-contain"
               />
             </a>
           </div>
