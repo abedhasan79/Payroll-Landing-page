@@ -19,7 +19,7 @@ const Navbar = () => {
             />
           </a>
           <a href='/'>
-            <span className="text-xl font-bold text-white" style={{ textShadow: '0 0 12px rgb(87, 244, 250)' }}>PayHubMb</span>
+            <span className="text-3xl font-bold text-white" style={{ textShadow: '0 0 12px rgb(87, 244, 250)' }}>PayHubMb</span>
           </a>
         </div>
 
