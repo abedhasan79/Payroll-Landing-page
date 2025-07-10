@@ -9,7 +9,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_popyhfs', // Replace with your service ID
+      'service_l3mg6zr', // Replace with your service ID
       'template_ezmc6w2', // Replace with your template ID
       form.current,
       'yKrQdY5O2joQNkEn4'   // Replace with your public key
