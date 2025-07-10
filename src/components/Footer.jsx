@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Brand */}
         <div>
-          <h3 className="text-xl font-bold mb-2">PayHubMb</h3>
+          <a href='/'><h3 className="text-xl font-bold mb-2">PayHubMb</h3></a>
           <p className="text-sm text-gray-400">
             Helping Canadian businesses simplify payroll and stay CRA compliant.
           </p>

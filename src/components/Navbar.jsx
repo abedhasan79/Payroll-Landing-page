@@ -10,12 +10,17 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo and Brand */}
         <div className="flex items-center space-x-3">
-          <img
-            src="/images/logo.png"
-            alt="PayHubMb Logo"
-            className="h-10 w-auto"
-          />
-          <span className="text-xl font-bold text-white" style={{ textShadow: '0 0 12px rgb(87, 244, 250)' }}>PayHubMb</span>
+
+          <a href='/'>
+            <img
+              src="/images/logo.png"
+              alt="PayHubMb Logo"
+              className="h-10 w-auto"
+            />
+          </a>
+          <a href='/'>
+            <span className="text-xl font-bold text-white" style={{ textShadow: '0 0 12px rgb(87, 244, 250)' }}>PayHubMb</span>
+          </a>
         </div>
 
         {/* Desktop Menu */}
@@ -27,14 +32,14 @@ const Navbar = () => {
           {/* <HashLink smooth to="/#contact" className="hover:text-blue-400 transition">Contact</HashLink> */}
           {
             path === '/services' ? (
-            <HashLink smooth to="#contact" className="hover:text-blue-400 transition">
-              Contact
-            </HashLink>
-          ) : (
-            <HashLink smooth to="/#contact" className="hover:text-blue-400 transition">
-              Contact
-            </HashLink>
-          )
+              <HashLink smooth to="#contact" className="hover:text-blue-400 transition">
+                Contact
+              </HashLink>
+            ) : (
+              <HashLink smooth to="/#contact" className="hover:text-blue-400 transition">
+                Contact
+              </HashLink>
+            )
           }
         </div>
 
@@ -54,14 +59,14 @@ const Navbar = () => {
           <a href="/checklist" className="block hover:text-blue-400 transition">Tax File Checklist</a>
           {
             path === '/services' ? (
-            <HashLink smooth to="#contact" className="block hover:text-blue-400 transition">
-              Contact
-            </HashLink>
-          ) : (
-            <HashLink smooth to="/#contact" className="block hover:text-blue-400 transition">
-              Contact
-            </HashLink>
-          )
+              <HashLink smooth to="#contact" className="block hover:text-blue-400 transition">
+                Contact
+              </HashLink>
+            ) : (
+              <HashLink smooth to="/#contact" className="block hover:text-blue-400 transition">
+                Contact
+              </HashLink>
+            )
           }
         </div>
       )}

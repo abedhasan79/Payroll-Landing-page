@@ -11,7 +11,7 @@ const TaxChecklist = () => {
           <a
             href="/checklists/new-client-t1.pdf"
             download
-            className="bg-pink-500 text-white px-6 py-4 rounded-lg shadow-md hover:bg-pink-600 transition"
+            className="bg-rose-500 text-white px-6 py-4 rounded-lg shadow-md hover:bg-rose-600 transition text-xl font-bold font-verdana"
           >
             New Client <br />(T1)
           </a>
@@ -19,7 +19,7 @@ const TaxChecklist = () => {
           <a
             href="/checklists/returning-client-t1.pdf"
             download
-            className="bg-blue-500 text-white px-6 py-4 rounded-lg shadow-md hover:bg-blue-600 transition"
+            className="bg-cyan-500 text-white px-6 py-4 rounded-lg shadow-md hover:bg-cyan-600 transition text-xl font-bold font-verdana"
           >
             Returning Client <br />(T1)
           </a>
@@ -27,7 +27,7 @@ const TaxChecklist = () => {
           <a
             href="/checklists/corporate-t2.pdf"
             download
-            className="bg-green-600 text-white px-6 py-4 rounded-lg shadow-md hover:bg-green-700 transition"
+            className="bg-emerald-600 text-white px-6 py-4 rounded-lg shadow-md hover:bg-emerald-700 transition text-xl font-bold font-verdana"
           >
             Corporate <br />(T2)
           </a>
