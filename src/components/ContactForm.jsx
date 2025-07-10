@@ -1,21 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
+  const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    // TODO: Connect to form backend like EmailJS, Formspree, etc.
+
+    emailjs.sendForm(
+      'service_popyhfs', // Replace with your service ID
+      'template_ezmc6w2', // Replace with your template ID
+      form.current,
+      'yKrQdY5O2joQNkEn4'   // Replace with your public key
+    )
+    .then(() => {
+      setSubmitted(true);
+    }, (error) => {
+      console.error('FAILED...', error);
+      alert('Something went wrong. Please try again.');
+    });
   };
 
-  // const imageUrl = 'images/handsh.png'; // relative path from public folder
-
   return (
-    <section  className="flex flex-col md:flex-row min-h-screen bg-gradient-to-br from-pink-50 via-grey-400 to-blue-200" >
+    <section className="flex flex-col md:flex-row min-h-screen bg-gradient-to-br from-pink-50 via-grey-400 to-blue-200">
       {/* Left Side: Image */}
-      <div className="md:w-1/2 h-auto md:h-auto bg-cover bg-center">
-        <img src='images/handsh.png' alt='handshake'/>
+      <div className="md:w-1/2 h-auto bg-cover bg-center">
+        <img src="images/handsh.png" alt="handshake" />
       </div>
 
       {/* Right Side: Form */}
@@ -23,68 +34,38 @@ const ContactForm = () => {
         <div className="w-full max-w-xl">
           <h2 className="text-4xl font-bold mb-6 text-center">Get in Touch</h2>
           <p className="text-lg mb-8 text-center">
-            Ready to outsource your payroll or have a few questions or want to get a Quote about a service? Send us a message and we'll get back to you shortly.
+            Ready to outsource your payroll or want a quote? Send us a message and we'll reply shortly.
           </p>
 
           {submitted ? (
             <p className="text-green-600 text-lg font-medium text-center">Thanks! We'll contact you soon.</p>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form ref={form} onSubmit={handleSubmit} className="space-y-5">
               <div>
                 <label className="block mb-1 font-medium">Full Name</label>
-                <input
-                  type="text"
-                  required
-                  placeholder="Jane Smith"
-                  className="w-full border border-gray-300 rounded p-3"
-                />
+                <input name="from_name" type="text" required placeholder="Your Name" className="w-full border border-gray-300 rounded p-3" />
               </div>
               <div>
                 <label className="block mb-1 font-medium">Email Address</label>
-                <input
-                  type="email"
-                  required
-                  placeholder="you@business.com"
-                  className="w-full border border-gray-300 rounded p-3"
-                />
+                <input name="from_email" type="email" required placeholder="you@business.com" className="w-full border border-gray-300 rounded p-3" />
               </div>
               <div>
                 <label className="block mb-1 font-medium">Phone Number</label>
-                <input
-                  type="tel"
-                  placeholder="(123) 456-7890"
-                  className="w-full border border-gray-300 rounded p-3"
-                />
+                <input name="phone" type="tel" placeholder="ex: (123) 456-7890" className="w-full border border-gray-300 rounded p-3" />
               </div>
               <div>
                 <label className="block mb-1 font-medium">Business Name</label>
-                <input
-                  type="text"
-                  placeholder="ABC Corp"
-                  className="w-full border border-gray-300 rounded p-3"
-                />
+                <input name="business" type="text" required placeholder="ex: ABC Corp" className="w-full border border-gray-300 rounded p-3" />
               </div>
               <div>
-                <label className="block mb-1 font-medium">Number of employees</label>
-                <input
-                  type="number"
-                  placeholder=""
-                  className="w-full border border-gray-300 rounded p-3"
-                />
+                <label className="block mb-1 font-medium">Number of Employees</label>
+                <input name="employees" type="number" className="w-full border border-gray-300 rounded p-3" />
               </div>
               <div>
                 <label className="block mb-1 font-medium">How can we help?</label>
-                <textarea
-                  required
-                  rows="4"
-                  placeholder="Tell us a bit about your payroll needs..."
-                  className="w-full border border-gray-300 rounded p-3"
-                ></textarea>
+                <textarea name="message" required rows="4" placeholder="Tell us a bit about your payroll or other Service needs..." className="w-full border border-gray-300 rounded p-3"></textarea>
               </div>
-              <button
-                type="submit"
-                className="bg-blue-400 text-white font-semibold py-3 px-6 rounded hover:bg-blue-800 transition"
-              >
+              <button type="submit" className="bg-blue-400 text-white font-semibold py-3 px-6 rounded hover:bg-blue-800 transition">
                 Send Message
               </button>
             </form>
