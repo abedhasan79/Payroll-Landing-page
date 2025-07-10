@@ -23,7 +23,7 @@ const ContactForm = () => {
         <div className="w-full max-w-xl">
           <h2 className="text-4xl font-bold mb-6 text-center">Get in Touch</h2>
           <p className="text-lg mb-8 text-center">
-            Ready to outsource your payroll or have a few questions or want to get a Quote anout a service? Send us a message and we'll get back to you shortly.
+            Ready to outsource your payroll or have a few questions or want to get a Quote about a service? Send us a message and we'll get back to you shortly.
           </p>
 
           {submitted ? (
