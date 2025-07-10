@@ -57,7 +57,7 @@ const CRALinks = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-grey-600  font-bold font-verdana" style={{ textShadow: '0 0 12px rgb(255, 215, 0)' }}>Updates & Alerts</h3>
+            <h3 className="text-xl font-semibold mb-4 text-grey-600  font-bold font-verdana" style={{ textShadow: '0 0 12px rgb(252, 7, 7)' }}>Updates & Alerts</h3>
             <ul className="space-y-3">
               {otherLinks.map((link, idx) => (
                 <li key={idx}>
