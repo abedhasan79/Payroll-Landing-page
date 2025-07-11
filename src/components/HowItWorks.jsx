@@ -5,7 +5,7 @@ const steps = [
   {
     title: 'Send Your Hours',
     icon: <ClipboardList className="h-8 w-8 text-pink-500" />,
-    description: 'Email us the hours for your employees weekly, bi-weekly, or monthly.',
+    description: 'Email us the hours for your employees weekly, bi-weekly, monthly or Semi-monthly.',
   },
   {
     title: 'We Process Payroll',
