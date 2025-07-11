@@ -22,7 +22,7 @@ const benefits = [
   {
     title: 'Flexible Scheduling',
     icon: <CalendarCheck className="h-8 w-8 text-indigo-500" />,
-    description: 'Choose weekly, bi-weekly, or monthly schedules based on your needs.',
+    description: 'Choose weekly, bi-weekly, Semi-monthly or monthly schedules based on your needs.',
   },
   {
     title: 'Direct Deposit by employer',
