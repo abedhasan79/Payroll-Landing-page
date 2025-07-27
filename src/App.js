@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   useEffect(()=>{
-    document.title = 'PayHubMB';
+    document.title = 'PayHub Canada';
   });
 
   return (

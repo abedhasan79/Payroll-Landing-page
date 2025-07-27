@@ -13,13 +13,13 @@ const Navbar = () => {
 
           <a href='/'>
             <img
-              src="/images/logo.png"
+              src="/images/main_logo.png"
               alt="PayHubMb Logo"
               className="h-10 w-auto"
             />
           </a>
           <a href='/'>
-            <span className="text-3xl font-bold text-white" style={{ textShadow: '0 0 12px rgb(87, 244, 250)' }}>PayHubMb</span>
+            <span className="text-3xl font-bold text-white" style={{ textShadow: '0 0 12px rgb(87, 244, 250)' }}>PayHub Canada</span>
           </a>
         </div>
 

@@ -50,7 +50,7 @@ const Benefits = () => {
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }}>
-      <h2 className="text-4xl font-bold text-gray-50 mb-10">Why Choose PayHubMb</h2>
+      <h2 className="text-4xl font-bold text-gray-50 mb-10">Why Choose PayHub Canada</h2>
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
         {benefits.map((benefit, index) => (

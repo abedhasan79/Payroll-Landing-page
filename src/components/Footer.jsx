@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Brand */}
         <div>
-          <a href='/'><h3 className="text-xl font-bold mb-2">PayHubMb</h3></a>
+          <a href='/'><h3 className="text-xl font-bold mb-2">PayHub Canada</h3></a>
           <p className="text-sm text-gray-400">
             Helping Canadian businesses simplify payroll and stay CRA compliant.
           </p>
@@ -82,6 +82,19 @@ const Footer = () => {
                 className="h-8 w-8 hover:opacity-80 transition rounded-2xl shadow-[0_0_15px_3px_rgba(37,211,102,0.7)]"
               />
             </a>
+
+            <a
+              href="https://x.com/PayHubCanada?s=09"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/1024px-X_logo_2023.svg.png"
+                alt="WhatsApp"
+                className="h-8 w-8 hover:opacity-80 transition rounded-2xl shadow-[0_0_15px_3px_rgba(157,148,153,0.8)]"
+              />
+            </a>
           </div>
 
           {/* Logos */}
@@ -105,7 +118,7 @@ const Footer = () => {
       </div>
 
       <div className="mt-8 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} PayHubMb. All rights reserved.
+        © {new Date().getFullYear()} PayHub Canada. All rights reserved.
       </div>
     </footer>
   );
