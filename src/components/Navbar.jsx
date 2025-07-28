@@ -7,15 +7,15 @@ const Navbar = () => {
   const path = window.location.pathname;
   return (
     <nav className="bg-gray-900 text-white shadow-md sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="max-w-8xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo and Brand */}
         <div className="flex items-center space-x-3">
 
           <a href='/'>
             <img
               src="/images/main_logo.png"
-              alt="PayHubMb Logo"
-              className="h-10 w-auto"
+              alt="PayHub Canada Logo"
+              className="h-20 w-auto"
             />
           </a>
           <a href='/'>

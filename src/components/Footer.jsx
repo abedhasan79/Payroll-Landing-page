@@ -8,7 +8,19 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Brand */}
         <div>
-          <a href='/'><h3 className="text-xl font-bold mb-2">PayHub Canada</h3></a>
+          <div className="flex items-center space-x-3">
+
+            <a href='/'>
+              <img
+                src="/images/main_logo.png"
+                alt="PayHub Canada Logo"
+                className="h-20 w-auto"
+              />
+            </a>
+            <a href='/'>
+              <span className="text-xl font-bold text-white" style={{ textShadow: '0 0 12px rgb(87, 244, 250)' }}>PayHub Canada</span>
+            </a>
+          </div>
           <p className="text-sm text-gray-400">
             Helping Canadian businesses simplify payroll and stay CRA compliant.
           </p>
