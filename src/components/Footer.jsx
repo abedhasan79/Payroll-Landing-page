@@ -46,7 +46,7 @@ const Footer = () => {
           </a></p>
 
           <div className="flex justify-center md:justify-start gap-4 mb-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/RanaAccountingTaxServicesWinnipeg?rdid=YY5wA4m5kLb8eZZU&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19TXFGk2vK%2F#" target="_blank" rel="noopener noreferrer">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
                 alt="Facebook"
@@ -92,7 +92,7 @@ const Footer = () => {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/1024px-X_logo_2023.svg.png"
                 alt="WhatsApp"
-                className="h-8 w-8 hover:opacity-80 transition rounded-2xl shadow-[0_0_15px_3px_rgba(157,148,153,0.8)]"
+                className="bg-white h-8 w-8 hover:opacity-80 transition rounded-2xl shadow-[0_0_15px_3px_rgba(157,148,153,0.8)]"
               />
             </a>
           </div>
